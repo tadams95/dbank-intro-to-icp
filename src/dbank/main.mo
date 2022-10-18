@@ -6,9 +6,10 @@ actor DBank {
   //the stable key word makes this variable have orthogonal persistence.
   //a variable keeps its state even after a refresh or redeploy
   stable var currentValue: Float =  300;
-  // currentValue := 100;
+  currentValue := 300;
 
   stable var startTime = Time.now();
+  startTime := Time.now();
   Debug.print(debug_show(startTime));
 
   let id = 9841646494;
